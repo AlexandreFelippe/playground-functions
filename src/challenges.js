@@ -9,24 +9,20 @@ function compareTrue(compar1, compar2) {
   else {
     return false
   }
-
 }
-
 console.log(compareTrue(true, true))
 console.log(compareTrue(true, false))
 
-
-
-
-
 // Desafio 2 - Crie a função splitSentence
 
-let frase= '';
 function splitSentence(frase) {
-  splitSentence (' ')
+return frase.split(" ");
 }
+console.log(splitSentence('go Trybe'))
 
 // Desafio 3 - Crie a função concatName
+
+
 
 // Desafio 4 - Crie a função footballPoints
 
