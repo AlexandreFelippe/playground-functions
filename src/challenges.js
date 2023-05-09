@@ -21,7 +21,12 @@ return frase.split(" ");
 console.log(splitSentence('go Trybe'))
 
 // Desafio 3 - Crie a função concatName
+let array = ['foguete', 'não', 'tem', 'ré']
 
+function concatName(parameter) {
+  return parameter[parameter.length-1] + ", " + parameter[0];
+}
+console.log (concatName(array))
 
 
 // Desafio 4 - Crie a função footballPoints
