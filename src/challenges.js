@@ -28,8 +28,15 @@ function concatName(parameter) {
 }
 console.log (concatName(array))
 
-
 // Desafio 4 - Crie a função footballPoints
+
+let wins;
+let ties;
+
+function footballPoints(wins, ties) {
+  return (wins * 3 + ties *1)
+}
+console.log(footballPoints (1, 2))
 
 // Desafio 5 - Crie a função highestCount
 
