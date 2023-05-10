@@ -72,7 +72,6 @@ function calcAllAreas(base, height, form) {
     return `O valor da área do retângulo é de: ${calcRectangleArea(base, height)}`
   };
     return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida'
-  
   };
 
 console.log(calcAllAreas(10, 50));
