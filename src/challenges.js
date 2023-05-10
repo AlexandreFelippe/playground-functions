@@ -10,15 +10,14 @@ function compareTrue(compar1, compar2) {
     return false
   }
 }
-console.log(compareTrue(true, true))
-console.log(compareTrue(true, false))
+
 
 // Desafio 2 - Crie a função splitSentence
 
 function splitSentence(frase) {
 return frase.split(" ");
 }
-console.log(splitSentence('go Trybe'))
+
 
 // Desafio 3 - Crie a função concatName
 let array = ['foguete', 'não', 'tem', 'ré']
@@ -26,7 +25,7 @@ let array = ['foguete', 'não', 'tem', 'ré']
 function concatName(parameter) {
   return parameter[parameter.length-1] + ", " + parameter[0];
 }
-console.log (concatName(array))
+
 
 // Desafio 4 - Crie a função footballPoints
 
@@ -36,9 +35,25 @@ let ties;
 function footballPoints(wins, ties) {
   return (wins * 3 + ties *1)
 }
-console.log(footballPoints (1, 2))
+
 
 // Desafio 5 - Crie a função highestCount
+
+function maiorNumero(array) {
+  let maior = array[0];
+    for (let index = 0; index < array.length; index += 1 ) {
+    if (array[index] > maior) maior = array[index];
+    }
+    return maior
+} 
+  function highestCount(array) {
+   let count = 0; 
+    for (let index1 = 0; index1 < array.length; index1 += 1 ){
+    if (array[index1] === maiorNumero(array)) {count += 1}
+    }
+    return count
+  }
+ 
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
