@@ -57,11 +57,44 @@ function maiorNumero(array) {
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
+function calcTriangleArea(base, height) {
+ return (base * height) / 2
+}
+function calcRectangleArea(base, height) {
+  return (base * height)
+}
+
+function calcAllAreas(base, height, form) {
+  if (form === "triângulo") {    
+    return `O valor da área do triângulo é de: ${calcTriangleArea(base, height)}`
+  };
+  if (form === "retângulo") {    
+    return `O valor da área do retângulo é de: ${calcRectangleArea(base, height)}`
+  };
+    return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida'
+  
+  };
+
+console.log(calcAllAreas(10, 50));
 // Desafio 7 - Crie a função catAndMouse
+//function catAndMouse(mouse, cat1, cat2) {
+//  if (cat2 mouse) {
+    
+//  }
+//}
 
 // Desafio 8 - Crie a função fizzBuzz
+//let fizz;
+//let buzz;
+//let fizzBuzz;
+//let bug;
 
-// Desafio 9 - Crie a função encode e a função decode
+//function fizzBuzz (array = []) {
+
+//}
+
+
+  // Desafio 9 - Crie a função encode e a função decode
 
 // Desafio 10 - Crie a função techList
 
