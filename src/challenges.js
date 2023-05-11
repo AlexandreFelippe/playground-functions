@@ -1,7 +1,4 @@
 // Desafio 1 - Crie a função compareTrue
-const girafa = true;
-const elefante = true;
-const macaco = false;
 
 function compareTrue(compar1, compar2) {
   if (compar1 === true && compar2 === true) {
@@ -20,7 +17,6 @@ return frase.split(" ");
 
 
 // Desafio 3 - Crie a função concatName
-let array = ['foguete', 'não', 'tem', 'ré']
 
 function concatName(parameter) {
   return parameter[parameter.length-1] + ", " + parameter[0];
@@ -29,8 +25,6 @@ function concatName(parameter) {
 
 // Desafio 4 - Crie a função footballPoints
 
-let wins;
-let ties;
 
 function footballPoints(wins, ties) {
   return (wins * 3 + ties *1)
@@ -74,25 +68,45 @@ function calcAllAreas(base, height, form) {
     return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida'
   };
 
-console.log(calcAllAreas(10, 50));
+//console.log(calcAllAreas(10, 50));
 // Desafio 7 - Crie a função catAndMouse
 //function catAndMouse(mouse, cat1, cat2) {
-//  if (cat2 mouse) {
-    
-//  }
-//}
+
+function catAndMouse(mouse, cat1, cat2) {
+  if (cat2 - mouse < cat1 - mouse) {
+  return "cat2"};
+  if (cat1 - mouse < cat2 - mouse) {
+    return "cat1"};
+  if (cat1 - mouse === cat2 - mouse) {
+    return "os gatos trombam e o rato foge"
+  }; 
+  }
+  console.log(catAndMouse[28, 8 , 12]);
+ 
+
+
+
 
 // Desafio 8 - Crie a função fizzBuzz
-//let fizz;
-//let buzz;
-//let fizzBuzz;
-//let bug;
-
-//function fizzBuzz (array = []) {
-
-//}
-
-
+function fizzBuzz(array) {
+let retorno = []
+for (let index = 0; index < array.length; index = index +=1) {
+  if ((array[index]) % 3 === 0 && (array[index]) % 5 === 0) {
+  retorno.push("fizzBuzz")
+  }
+  else if (array[index] % 3 === 0) {
+  retorno.push("fizz")
+  } 
+  else if (array[index] % 5 === 0) {
+  retorno.push("buzz")
+  }
+  else {
+  retorno.push("bug!")
+  }
+}
+return retorno
+}
+console.log(fizzBuzz([2, 15, 7, 9, 45]))
   // Desafio 9 - Crie a função encode e a função decode
 
 // Desafio 10 - Crie a função techList
