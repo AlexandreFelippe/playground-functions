@@ -73,15 +73,18 @@ function calcAllAreas(base, height, form) {
 //function catAndMouse(mouse, cat1, cat2) {
 
 function catAndMouse(mouse, cat1, cat2) {
-  if (cat2 - mouse < cat1 - mouse) {
-  return "cat2"};
-  if (cat1 - mouse < cat2 - mouse) {
+  let distanciaCat1 = Math.abs(mouse - cat1)
+  let distanciaCat2 = Math.abs(mouse - cat2)
+
+  if (distanciaCat1 < distanciaCat2) {
     return "cat1"};
-  if (cat1 - mouse === cat2 - mouse) {
+  if (distanciaCat1 > distanciaCat2) {
+    return "cat2"};
+  if (distanciaCat1 === distanciaCat2) {
     return "os gatos trombam e o rato foge"
   }; 
   }
-  console.log(catAndMouse[28, 8 , 12]);
+  //console.log(catAndMouse(28, 8 , -12));
  
 
 
@@ -106,7 +109,7 @@ for (let index = 0; index < array.length; index = index +=1) {
 }
 return retorno
 }
-console.log(fizzBuzz([2, 15, 7, 9, 45]))
+// console.log(fizzBuzz([2, 15, 7, 9, 45]))
   // Desafio 9 - Crie a função encode e a função decode
 
 // Desafio 10 - Crie a função techList
